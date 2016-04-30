@@ -28,10 +28,11 @@ public:
 	}
 	~PWFunc(){}
 protected:
-	//this must be written for each sub class accepts a place to store the answe and the value to be evaluated,
+	//this must be written for each derrived class accepts a place to store the answer and the value to be evaluated,
 	//returns true if it could be handeled
 	virtual bool internalEval(double& toStore,double position)=0;
 private:
+	//next mask
 	PWFunc* _next;
 };
 
